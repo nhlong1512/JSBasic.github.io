@@ -420,3 +420,21 @@ for (var course of courses){
 }
 
 console.log(totalCoin);//1250
+
+//Thay vì viết dài dòng như này ta có thể sử dụng phương thức reduce()
+
+function coinHandler(accumulator, currentValue){
+    return accumulator + currentValue.coin;
+}
+
+var totalCoin = courses.reduce(coinHandler,0);
+
+console.log(totalCoin);//1250
+
+//Hoặc
+
+var totalCoin = courses.reduce(function(accumulator, currentValue){
+    return accumulator + currentValue.coin;
+}, 0);
+
+console.log(totalCoin);//1250
