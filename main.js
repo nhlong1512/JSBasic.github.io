@@ -408,3 +408,15 @@ function courseHandler(course) {
 
 var newCourses = courses.map(courseHandler);
 console.log(newCourses)
+
+
+
+// reduce() method
+
+//muốn tính tổng số coin ta có thể dùng vòng lặp
+var totalCoin =0;
+for (var course of courses){
+    totalCoin += course.coin;
+}
+
+console.log(totalCoin);//1250
