@@ -438,3 +438,19 @@ var totalCoin = courses.reduce(function(accumulator, currentValue){
 }, 0);
 
 console.log(totalCoin);//1250
+
+
+//Tự định nghĩa phương thức reduce ta đặt tên cho nó là reduce2
+
+
+
+//STRING ARRAY INCLUDES() METHODS
+
+var title = 'Responsive Web Design';
+console.log(title.includes('Responsive'));// True
+console.log(title.includes('Ruby')); // False
+console.log(title.includes('Responsive',2));//False // trả về false vì bắt đầu từ vị trí số 2 thì responsive không có.
+
+var courses  = ['Javascript', 'PHP', 'Dart'];
+console.log(courses.includes('Dart'));//True
+//Tương tự như include() của chuỗi.
