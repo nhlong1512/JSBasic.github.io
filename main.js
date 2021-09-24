@@ -490,9 +490,30 @@ console.log(Math.floor(Math.random()*100));//91
 console.log(Math.max(-100, -200, 0, 10, 99, 50));//99
 //Tương tự với Math.min();
 
-Array.prototype.map2 = function(callback){
-    for(var i =0; i<this.length; i++){
-        callback(this[i], i);
+// Array.prototype.map2 = function(callback){
+//     for(var i =0; i<this.length; i++){
+//         callback(this[i], i);
+//     }
+// }
+
+var courses =[
+    'Javascript',
+    'PHP',
+    'Ruby'
+];
+
+// courses.map2();
+
+
+
+
+//MY FOR EACH METHOD
+
+Array.prototype.forEach2 = function(callback){
+    for(var index in this){
+        if(this.hasOwnProperty(index)){
+            callback(this[index], index, this);
+        }
     }
 }
 
@@ -502,6 +523,13 @@ var courses =[
     'Ruby'
 ];
 
-courses.map2();
+courses.forEach2(function(course, index, array){
+    console.log(course, index, array);
+});
+
+
+
+
+
 
 
