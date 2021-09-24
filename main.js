@@ -454,3 +454,54 @@ console.log(title.includes('Responsive',2));//False // trả về false vì bắ
 var courses  = ['Javascript', 'PHP', 'Dart'];
 console.log(courses.includes('Dart'));//True
 //Tương tự như include() của chuỗi.
+
+
+
+
+
+
+//MATH OBJECT
+
+//Math.PI
+console.log(Math.PI);//3.141592653589793 ==> Trả về giá trị PI
+
+//Math.round() ==> Làm tròn số thôi, ví dụ 1.5 thì  = 2 
+console.log(Math.round(1.5));//2
+console.log(Math.round(5.134));//5
+
+//Math.abs() ==> Trả về giá trị tuyệt đối
+console.log(Math.abs(-5.23));//5.23
+
+//Math.ceil() ==>Làm tròn trên
+console.log(Math.ceil(4.2322));//5
+
+//Math.floor() ==>Làm tròn dưới
+console.log(Math.floor(5.9433));//5
+
+//Math.random() ==> Trả về một số thập phân bất kì nhỏ hơn 1
+console.log(Math.random());//0.644111603852775
+console.log(Math.random());//0.021482357806977825
+//==> Nếu muốn tạo random số nguyên từ 0 đến 100 thì ta có thể sử dụng làm tròn dưới
+console.log(Math.floor(Math.random()*100));//26
+console.log(Math.floor(Math.random()*100));//17
+console.log(Math.floor(Math.random()*100));//91
+
+//Math.min() và Math.max()
+console.log(Math.max(-100, -200, 0, 10, 99, 50));//99
+//Tương tự với Math.min();
+
+Array.prototype.map2 = function(callback){
+    for(var i =0; i<this.length; i++){
+        callback(this[i], i);
+    }
+}
+
+var courses =[
+    'Javascript',
+    'PHP',
+    'Ruby'
+];
+
+courses.map2();
+
+
