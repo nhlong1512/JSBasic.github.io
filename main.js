@@ -660,8 +660,35 @@ console.log(result2);//false
 
 //DOM - DOCUMENT OBJECT MODEL
 
-document.write('Hello Nguyen Huu Long!!!');// Vì bên chương trình index.html js được để sau h1 javascript nên khi write ra dòng hello nguyen huu long sẽ sau
+document.write('Hello Nguyen Huu Long!!!');// Vì bên chương trình index.html js được để sau h1 HTML DOM nên khi write ra dòng hello nguyen huu long sẽ sau
 // document.write giúp ta có thể viết một chuỗi chèn vào được trong html, sau đây chúng ta sẽ học thêm nhiều ứng dụng của document.
+
+//1. Elements: ID, class, tag, CSS selector, HTML collection
+//2. Attribute
+//3. Text
+
+//ID
+var headingNode = document.getElementById('heading');
+console.log(headingNode);//==> Lấy ra được thẻ h1 đó trong console, lấy bằng id
+//class
+var headingNodes = document.getElementsByClassName('heading2');
+console.log(headingNodes);// Trả về 3 thẻ h2 có class = "heading2";
+//tag
+var headingNodes2 = document.getElementsByTagName('h2');
+console.log(headingNodes2);//Cái này cũng sẽ trả về 3 cái thẻ h2 y đúc cái ByClassName nhưng khác ở chỗ nó truyền vào không phải tên class mà là cái element h2
+//CSS selector
+var headingNode1 = document.querySelector('#heading');
+console.log(headingNode1);//==> Với trường hợp này nó sẽ truy cập đến thẻ h1 có trong index.html
+var headingNode2 = document.querySelector('.heading2');
+console.log(headingNode2);// Truy cập đến thẻ h2 Nguyen đầu tiên của index.html
+//Nếu muốn select hết được các thẻ khác trong class heading2 thì ta sẽ sử dụng
+var headingNodes3 = document.querySelectorAll('.heading2');
+console.log(headingNodes3);//Nó sẽ trả về 1 NodeList gồm 3 thẻ h2 có class là heading2 trong index.html
+//LƯU Ý: PHƯƠNG THỨC SELECTOR BẰNG CÁCH QUERYSELECTOR LÀ PHƯƠNG THỨC ĐƯỢC DÙNG NHIỀU HƠN CẢ VÌ NÓ TIỆN LỢI VÀ CÓ THỂ TRUY CẬP Y ĐÚC CÁCH BẠN TRUY CẬP BẰNG HTML
+//NÊN NÓ ĐƯỢC DÙNG PHỔ BIẾN, MÌNH NGHĨ MÌNH CŨNG SẼ DÙNG CÁI NÀY NHIỀU =))).
+
+
+
 
 
 
