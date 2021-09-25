@@ -657,3 +657,12 @@ console.log(result2);//false
 
 
 
+
+//DOM - DOCUMENT OBJECT MODEL
+
+document.write('Hello Nguyen Huu Long!!!');// Vì bên chương trình index.html js được để sau h1 javascript nên khi write ra dòng hello nguyen huu long sẽ sau
+// document.write giúp ta có thể viết một chuỗi chèn vào được trong html, sau đây chúng ta sẽ học thêm nhiều ứng dụng của document.
+
+
+
+
