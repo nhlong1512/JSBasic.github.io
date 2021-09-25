@@ -568,6 +568,8 @@ console.log(filterCourses)
 
 
 
+
+
 //MY SOME METHOD
 
 Array.prototype.some2 = function(callback){
@@ -606,6 +608,51 @@ var result = courses.some2(function(course, index, array){
 
 console.log(result);
 
+
+
+//MY EVERY METHOD
+
+Array.prototype.every2 = function(callback){
+    for( var index in this){
+        if(this.hasOwnProperty(index)){
+            if(callback(this[index], index, this) === false){
+                return false;
+            }
+        }
+    }
+    return true;
+}
+
+var courses = [
+    {
+        name: 'Javascript',
+        coin: 680,
+        isFinish: true
+    },
+    {
+        name: 'PHP',
+        coin: 860,
+        isFinish: true
+    },
+    {
+        name: 'Ruby',
+        coin: 980,
+        isFinish: true
+    }
+];
+
+
+var result = courses.every2(function(course, index, array){
+    return course.isFinish;
+});
+
+var result2 = courses.every2(function(course, index, array){
+    return course.coin>700;
+})
+
+console.log(result);//true
+
+console.log(result2);//false
 
 
 
