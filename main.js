@@ -687,6 +687,8 @@ console.log(headingNodes3);//Nó sẽ trả về 1 NodeList gồm 3 thẻ h2 có
 //LƯU Ý: PHƯƠNG THỨC SELECTOR BẰNG CÁCH QUERYSELECTOR LÀ PHƯƠNG THỨC ĐƯỢC DÙNG NHIỀU HƠN CẢ VÌ NÓ TIỆN LỢI VÀ CÓ THỂ TRUY CẬP Y ĐÚC CÁCH BẠN TRUY CẬP BẰNG HTML
 //NÊN NÓ ĐƯỢC DÙNG PHỔ BIẾN, MÌNH NGHĨ MÌNH CŨNG SẼ DÙNG CÁI NÀY NHIỀU =))).
 
+//diemdanhlachinh
+
 
 
 
