@@ -688,6 +688,7 @@ console.log(headingNodes3);//Nó sẽ trả về 1 NodeList gồm 3 thẻ h2 có
 //NÊN NÓ ĐƯỢC DÙNG PHỔ BIẾN, MÌNH NGHĨ MÌNH CŨNG SẼ DÙNG CÁI NÀY NHIỀU =))).
 
 //diemdanhlachinh
+//dd
 
 
 
