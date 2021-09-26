@@ -687,14 +687,37 @@ console.log(headingNodes3);//Nó sẽ trả về 1 NodeList gồm 3 thẻ h2 có
 //LƯU Ý: PHƯƠNG THỨC SELECTOR BẰNG CÁCH QUERYSELECTOR LÀ PHƯƠNG THỨC ĐƯỢC DÙNG NHIỀU HƠN CẢ VÌ NÓ TIỆN LỢI VÀ CÓ THỂ TRUY CẬP Y ĐÚC CÁCH BẠN TRUY CẬP BẰNG HTML
 //NÊN NÓ ĐƯỢC DÙNG PHỔ BIẾN, MÌNH NGHĨ MÌNH CŨNG SẼ DÙNG CÁI NÀY NHIỀU =))).
 
+
+//GET ELEMENTS METHOD 2
 //Ta cũng có thể truy xuất bằng cách
 
 {/* <div class="box">
     <div class="children">Children</div>
     <div class="children">Children</div>
 </div> */}
-var boxElement = document.querySelector('.box');
-var childrenElements = boxElement.querySelectorAll('.children');
+
+
+// var boxElement = document.querySelector('.box')[0];
+// var childrenElements = boxElement.querySelectorAll('.children');
+
+
+//GET ELEMENTS METHOD 3
+{/* <h1>Học lập trình tại F8</h1>
+
+<section>
+    <h2>Học JS HTML DOM</h2>
+</section>
+
+<div>
+    <h3>Làm bài tập ngay trên F8</h3>
+</div> */}
+
+//Ví dụ muốn lấy ra h1 element, h2 element, h3 element thì ta có thể dùng
+
+var h1Element = document.getElementsByTagName('h1')[0];
+var h2Element = document.getElementsByTagName('h2')[0];
+var h3Element = document.getElementsByTagName('h3')[0];
+
 
 
 
