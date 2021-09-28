@@ -742,6 +742,18 @@ console.log(heading.getAttribute('id'));//long ==> đối số chuyền vào cho
 console.log(heading.getAttribute('href'));//link
 
 
+//innerText và textContent
+
+var headingElement = document.querySelector('h1');
+
+console.log(headingElement.innerText);//HTML DOM==> Lấy ra
+console.log(headingElement.textContent);//HTML DOM
+
+
+//Gán
+headingElement.innerText = 'New heading';//New heading, innerText trả về cái gì ta nhìn thấy bên trang index.html
+headingElement.textContent = 'New second heading';//New second heading, textContent trả về những cái nằm trong thẻ, kể cả nội dung....
+
 
 
 
