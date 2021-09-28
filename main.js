@@ -756,6 +756,27 @@ headingElement.textContent = 'New second heading';//New second heading, textCont
 
 
 
+//InnerHTML và OuterHTML Property => Thêm 1 element vào trong 1 element đã có sẵn.
+var boxElement = document.querySelector('.box');
+console.log(boxElement.innerHTML);//<h2>Outer</h2>
+boxElement.innerHTML = '<h1>Heading</h1>';//<div class="box"><h1>Heading</h1></div> ==>Nó sẽ được hiểu là một đoạn HTML và nó sẽ thêm vào 
+//trong thẻ div theo dạng HTML
+
+console.log(boxElement.innerHTML);//<h1>Heading</h1>
+
+console.log(boxElement.outerHTML);//<div class="box"><h1>Heading</h1></div> ==>Nó in ra luôn cả thẻ div khác với inner chỉ in ra nd trong box
+
+//Giờ thì setter cho outerHTML nào
+
+boxElement.outerHTML = '<span>NguyenHuuLong</span>';//<span>NguyenHuuLong</span> ==>Thẻ div đã bị thay bằng thẻ span
+
+//Qua đó ta rút ra được innerHTML sẽ thao tác trong thẻ cha của nó tức là thẻ con
+//Còn outerHTML sẽ thao tác ở ngay trên chính thẻ cha nên setter của outerHTML sẽ là ghi đè cái cũ
+
+
+
+
+
 
 
 
