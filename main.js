@@ -719,6 +719,29 @@ var h2Element = document.getElementsByTagName('h2')[0];
 var h3Element = document.getElementsByTagName('h3')[0];
 
 
+//DOM ATTRIBUTES
+var headingElement = document.querySelector('h1');
+console.log(headingElement);//<h1 id="heading">HTML DOM</h1>
+
+//Bây giờ muốn thêm attributes vào element thì
+headingElement.title = 'heading';//<h1 id="heading" title="heading">HTML DOM</h1>
+headingElement.id = 'huulong';//<h1 id="huulong" title="heading">HTML DOM</h1>
+headingElement.className ='name';//<h1 id="huulong" title="heading" class="name">HTML DOM</h1>
+
+//hoặc ta có thể dùng phương thức
+
+var heading = document.querySelector('h2');
+console.log(heading);//<h2 class="heading2">NGUYEN</h2>
+
+heading.setAttribute('id', 'long');//Cái này cần chuyền 2 đối số đó là kiểu attribute cần thềm và tên attribute//<h2 class="heading2" id="long">NGUYEN</h2>
+heading.setAttribute('href', 'link');//<h2 class="heading2" id="long" href="link">NGUYEN</h2> ==>Kể cả heading k có kiểu attribute href cũng được thêm vào
+heading.setAttribute('daa', 'uit');//<h2 class="heading2" id="long" href="link" daa="uit">NGUYEN</h2>
+
+//Giờ muốn lấy ra tên của kiểu attribute thì làm cách nào? => getAttribute
+console.log(heading.getAttribute('id'));//long ==> đối số chuyền vào cho kiểu getAttribute là kiểu attribute
+console.log(heading.getAttribute('href'));//link
+
+
 
 
 
