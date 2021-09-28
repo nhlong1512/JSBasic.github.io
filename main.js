@@ -773,6 +773,8 @@ boxElement.outerHTML = '<span>NguyenHuuLong</span>';//<span>NguyenHuuLong</span>
 //Qua đó ta rút ra được innerHTML sẽ thao tác trong thẻ cha của nó tức là thẻ con
 //Còn outerHTML sẽ thao tác ở ngay trên chính thẻ cha nên setter của outerHTML sẽ là ghi đè cái cũ
 
+console.log([boxElement])
+
 
 
 
