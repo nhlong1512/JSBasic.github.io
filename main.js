@@ -777,6 +777,24 @@ console.log([boxElement])
 
 
 
+//DOM STYLE
+var box2Element = document.querySelector('.box2');
+//Ta sẽ CSS inline cho cái thẻ div.box2 này mà không cần dùng đến file css.
+box2Element.style.width = '200px';
+box2Element.style.height = '100px';
+box2Element.style.backgroundColor = 'green';//==> Hãy chạy live sever để xem kết quả nhận được.
+
+//Ta cũng có thể tạo DOM CSS bằng cách khác
+var box3Element = document.querySelector('.box3');
+Object.assign(box3Element.style, {
+    width: '200px',
+    height: '300px',
+    backgroundColor: 'blue'
+});
+
+
+
+
 
 
 
