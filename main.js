@@ -793,6 +793,28 @@ Object.assign(box3Element.style, {
 });
 
 
+//CLASSLIST PROPERTY
+
+//add ==>Thêm 1 class vào một element cho trước
+//contains => Kiểm tra xem 1 class có tồn tại trong element không
+//remove => Nhìn cái tên cũng hiểu chức năng của nó là để remove 1 class ra khỏi element
+//toggle=> Khi được chạy, lệnh toggle sẽ kiểm tra xem class được nhập có tồn tại trong element không, 
+//nếu có thì gỡ bỏ nó đi và nếu không có thì lại thêm vào
+
+
+//add
+var box4Element = document.querySelector('.box4');
+box4Element.classList.add('red', 'blue');// => in ra dòng chữ Rich màu đỏ, <div class="box4 red blue">
+//contains
+console.log(box4Element.classList.contains('red'));//true ==>Vì class red có tồn tại trong box4Element nên ok.
+//remove, giờ ta sẽ thử xóa thằng red ra khỏi box4Element
+box4Element.classList.remove('red');
+console.log(box4Element.classList);//=> box4Element chỉ còn 2 class là .box4 và .blue //<div class="box4 blue">
+//toggle
+box4Element.classList.toggle('red');//<div class="box4 blue red"> ==>red không có nên nó đã thêm vào
+box4Element.classList.toggle('red');//<div class="box4 blue"> ==>Bây giờ khi đã có thì nó lại xóa đi, đó là chức năng khá đặc biệt của toggle
+
+
 
 
 
