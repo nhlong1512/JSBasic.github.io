@@ -854,7 +854,27 @@ inputElement.onchange = function(e){
 
 //DOM EVENTS
 //1.preventDefault
-//2.stopPropagation
+//2.stopPropagation// loại bỏ sự kiện nổi bọt
+
+
+
+
+//EVENT LISTENER
+//1. Xử lý nhiều việc khi một event xảy ra
+//2. Lắng nghe/ Hủy bỏ lắng nghe
+var btn = document.getElementById('btn');
+btn.onclick = function(){
+    console.log('Viec 1');
+    console.log('Viec 2');
+    alert('Viec 3');
+    //=> Khi click vào nó sẽ thực hiện cả 3 việc
+}
+
+setTimeout(function(){
+    btn.onclick = function(){
+       
+    }
+},3000);
 
 
 
