@@ -832,6 +832,25 @@ for(var i =0; i<h2Box4Element.length; i++){
 //Qua bên web để thử click và xem kết quả nào ^^
 
 
+//VÍ DỤ VỀ DOM EVENTS TRONG THỰC TẾ
+//1.Input / select
+//2. Key up / down
+
+var inputElement = document.querySelector('input[type="text"]');
+inputElement.onchange = function(e){
+    console.log(e.target.value);//=>Lấy ra value của thẻ input
+}
+
+var inputElement = document.querySelector('input[type="checkbox"]');
+inputElement.onchange = function(e){
+    console.log(e.target.checked);//=>khi check sẽ trả về là true ngược lại thì false
+}
+
+var inputElement = document.querySelector('select');
+inputElement.onchange = function(e){
+    console.log(e.target.value);//=>Trả về giá trị khi mình select
+}
+
 
 
 
