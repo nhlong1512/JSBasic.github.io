@@ -816,6 +816,24 @@ box4Element.classList.toggle('red');//<div class="box4 blue"> ==>Bây giờ khi 
 
 
 
+//DOM EVENTS
+//1. Attributes events
+//2. Assign event using the element node
+//Muốn tìm hiểu thêm về các event thì search dom event html w3school trong này có rất nhiều event nhưng hôm nay ta sẽ học một số cái
+
+//Bây giờ ta sẽ thử làm thao tác khi click vào thẻ h2 của .box4 thì sẽ trả về ở console chính nó
+
+var h2Box4Element = document.querySelectorAll('.box4 h2');
+for(var i =0; i<h2Box4Element.length; i++){
+    h2Box4Element[i].onclick = function(e){
+        console.log(e.target);
+    }
+}
+//Qua bên web để thử click và xem kết quả nào ^^
+
+
+
+
 
 
 
