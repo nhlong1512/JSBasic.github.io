@@ -852,6 +852,11 @@ inputElement.onchange = function(e){
 }
 
 
+//DOM EVENTS
+//1.preventDefault
+//2.stopPropagation
+
+
 
 
 
