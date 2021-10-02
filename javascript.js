@@ -55,3 +55,23 @@ promise
 // GỌI NÓ KHI CÁI THAO TÁC CỦA CHÚNG TA THÀNH CÔNG VÀ REJECT CHÚNG TA GỌI NÓ KHI CÁI THAO TÁC CỦA CHÚNG TA THẤT BẠI
 // VÀ KHI CHÚNG TA SỬ DỤNG PROMISE CHÚNG TA SẼ SỬ DỤNG CÁC PHƯƠNG THỨC THEN() VÀ CATCH(). NÓ SẼ THỰC THI THEN() KHI 
 // PROMISE CỦA CHÚNG TA ĐƯỢC RESOLVE VÀ CATCH() KHI PROMISE CỦA CHÚNG TA BỊ REJECT
+
+
+
+
+//PROMISE METHODS(resolve, reject, all)
+//1. Promise.resolve
+//2. Promise.reject
+//3. Promise.all
+var promise = new Promise(function(resolve, reject){
+    // resolve('Success!');
+    reject('Error!');
+})
+
+promise
+    .then(function(result){
+        console.log('result: ', result);
+    })
+    .catch(function(err){
+        console.log('err: ', err);
+    });
