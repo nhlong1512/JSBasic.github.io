@@ -14,3 +14,9 @@ console.log(JSON.parse(json));//['Javascript', 'PHP']
 
 console.log(JSON.stringify(json));//"[\"Javascript\", \"PHP\"]" ==>Dạng chuỗi
 console.log(typeof JSON.stringify(json));//string
+
+
+//PROMISE
+//-Sync(Đồng bộ)
+//-Async(Bất đồng bộ)
+//Những thao tác bất đồng bộ: setTimeout, setInterval, fetch, XMLHttpRequest, file reading, request animation frame
